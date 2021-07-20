@@ -1,8 +1,9 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import React from "react";
 
-const PostDetail = (props) => {
+const PostDetail = () => {
   const [post, setPost] = useState();
   const { id } = useParams();
 
@@ -15,7 +16,7 @@ const PostDetail = (props) => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  }, [id]);
 
   return (
     <div>
