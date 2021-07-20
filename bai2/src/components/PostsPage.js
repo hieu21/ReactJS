@@ -1,8 +1,7 @@
 import axios from "axios";
-import { BrowserRouter as Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import React from "react";
-
+import React from 'react';
 
 const PostsPage = () => {
   const [posts, setPosts] = useState([]);
